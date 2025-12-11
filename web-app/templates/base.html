@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>App</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .flash { color: red; margin: 10px 0; }
+        form div { margin: 10px 0; }
+        label { display: inline-block; width: 100px; }
+        input { width: 200px; padding: 4px; }
+        button { padding: 6px 12px; }
+    </style>
+</head>
+<body>
+    <h1>App</h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for msg in messages %}
+                <div class="flash">{{ msg }}</div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+</body>
+</html>
