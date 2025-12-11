@@ -2,7 +2,7 @@
 
 ### Клонируем репозиторий
 ``` bash 
-git clone [https://github.com/KellerHalm/test-flask](https://github.com/KellerHalm/test-flask.git)
+git clone https://github.com/KellerHalm/test-flask.git
 ```
 
 ### Устанавливаем зависимости
